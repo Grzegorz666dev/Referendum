@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.Box {
+  width: 600px;
+  height: 900px;
+  background: linear-gradient(white, red);
+  background-repeat: no-repeat;
+  margin: 20px 50px 20px 50px;
+}
