@@ -56,8 +56,10 @@ p {
 }
 .divResult {
   display: flex;
-  margin-left: 75%;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 5%;
 }
-#votesCount {
-  margin-top: 9%;
+#votesCountNie {
+  margin-left: 20px;
 }
