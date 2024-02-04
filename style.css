@@ -3,8 +3,8 @@ body {
   justify-content: center;
 }
 .Box {
-  width: 600px;
-  height: 900px;
+  width: 900px;
+  height: auto;
   background: linear-gradient(white, red);
   background-repeat: no-repeat;
   margin: 20px 50px 20px 50px;
@@ -18,8 +18,39 @@ h1 {
   text-align: center;
   font-family: Script Std, cursive;
   font-style: itaick;
+  margin-top: 50px;
 }
 h2 {
   font-size: 20px;
   text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.formList {
+  list-style: none;
+}
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: "Times New Roman", Times, serif;
+}
+.info {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 60px;
+}
+.button {
+  margin-left: 75%;
+  background-color: firebrick;
+  color: white;
+  border-radius: 5px;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
