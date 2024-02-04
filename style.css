@@ -54,3 +54,10 @@ p {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.divResult {
+  display: flex;
+  margin-left: 75%;
+}
+#votesCount {
+  margin-top: 9%;
+}
