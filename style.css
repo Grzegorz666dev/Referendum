@@ -50,6 +50,9 @@ li {
   color: white;
   border-radius: 5px;
 }
+.winSmoll {
+  cursor: pointer;
+}
 p {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -59,6 +62,8 @@ p {
   justify-content: end;
   margin-top: 20px;
   margin-right: 5%;
+}
+#votesCountTak {
 }
 #votesCountNie {
   margin-left: 20px;
