@@ -1,3 +1,10 @@
+function goTo() {
+    window.location.href = "/components/form.html";
+
+}
+
+
+
 function updateVotesCount() {
     fetch('http://localhost:3000/getVotes')
         .then(response => response.json())
