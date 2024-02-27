@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referendum</title>
+    <link rel="stylesheet" href="/Referendum/style.css">
+</head>
+
+<body>
+    <div class="Box">
+
+        <img src="/Referendum/img/Herb_Polski.jpg" alt="godło polski">
+
+        <h1 class="title">Referendum</h1>
+
+        <h2>Wypowiedz się. Jakie jest twoje zdanie:</h2>
+
+        <h1>Czy jesteś za odwołaniem prezydenta Polski Andrzeja Dudy i postawienia go przed Trybunałem Konstytucyjnym?
+        </h1>
+
+
+
+        <form class="form">
+            <ul class="formList">
+                <li>
+                    <input type="radio" name="vote" class="winSmoll" value="tak">TAK</input>
+                </li>
+                <li>
+                    <input type="radio" name="vote" class="winSmoll" value="nie">NIE</input>
+                </li>
+                <li>
+                    <input type="radio" class="winSmoll" id="inputClosed" disabled>
+                    Pozycja "Nie wiem" jest
+                    dla osób które się nie zalogowały</input>
+                </li>
+            </ul>
+
+        </form>
+
+        <button class="button" onclick="submitVote()">Wyślij</button>
+        <div class="divResult">
+            <p id="result"></p>
+            <span id="votesCountTak"> tak: 0</span>
+            <span id="votesCountNie"> nie: 0</span>
+
+        </div>
+        <div class="info">
+
+            <p class="infoSmollBox" id="infoOne">
+                dfgh
+            </p>
+            <p id="tooltip" style="display: none;">Jeśli masz jakieś sugestie
+                co do przyszłych pytań, napisz nam. Listę pytań poddamy głosowaniu a
+                a zwycięskie zostaną włącone do referendum</p>
+            <button class="infoSmollBox" id="infoTwo" onmouseover="showTooltip()" onmouseout="hideTooltip()">
+                Moje pytania
+            </button>
+        </div>
+        <footer>
+            <p>
+                Jeśli nasze społeczne Referendum osiągnie duże zainteresowanie,
+                jego wyniki będą przedstawione publicznie oraz wysłane do odpowiednich
+                organów (organizacji) państwowych
+            </p>
+
+            <p>
+                Twoje dane służą tylko do logowania i nie są przesyłane
+                nigdzie dalej. Obowiązują zasady Rodo.
+            </p>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="/add.js"></script>
+</body>
+
+</html>
