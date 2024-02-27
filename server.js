@@ -4,6 +4,11 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000/getVotes');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+});
 
 app.post('/saveVotes', (req, res) => {
     const votes = req.body;
@@ -72,3 +77,13 @@ app.get('/getVotes', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Serwer nasłuchuje na porcie ${PORT}`);
 });
+
+function showTooltip() {
+    var tooltip = document.getElementById("tooltip");
+    tooltip.style.display = "block";
+}
+
+function hideTooltip() {
+    var tooltip = document.getElementById("tooltip");
+    tooltip.style.display = "none";
+}
